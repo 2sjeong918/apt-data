@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>닭장지수</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.0/css/bulma.css">
+  <link rel="stylesheet" href="./style.css">
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <h3>우리집 닭장지수 계산하기</h3>
+      <div class="columns">
+        <div class="column">
+          <label class="label" for="landarea">대지면적(평)</label>
+          <input class="input" type="number" id="landarea">
+        </div>
+        <div class="column">
+          <label class="label" for="buildarea">건축면적(평)</label>
+          <input class="input" type="number" id="buildarea">
+        </div>
+        <div class="column">
+          <label class="label" for="housenum">세대수</label>
+          <input class="input" type="number" id="housenum">
+        </div>
+        <div class="column">
+          <button class="button is-primary" onclick="calc()">닭장지수 계산하기</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <canvas id="myChart"></canvas>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="./apt.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+
+body {
+  background: #000;
+  /* color: #dddddd !important; */
+  padding: 3rem;
+}
+.box {
+  /* background: #292929; */
+  /* color: #dddddd; */
+}
+.button.is-primary {
+  background-color: rgba(255, 209, 46, 1);
+}
+.button.is-primary:hover {
+  background-color: rgba(255, 209, 46, 1);
+}
+#myChart {
+  margin-top: 6rem;
+  max-height: 600px;
+}
